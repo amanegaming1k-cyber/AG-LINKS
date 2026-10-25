@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b14">
+  <meta name="description" content="AG LINKS — All official links, social media, apps and services in one place.">
+  <title>AG LINKS — Official Link Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="AG LINKS Home">
+      <span class="brand-icon">AG</span>
+      <span>AG <span class="accent">LINKS</span></span>
+    </a>
+    <a class="top-button" href="#links">Explore Links ↗</a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="status"><span class="status-dot"></span> OFFICIAL LINK HUB</div>
+      <div class="hero-logo">AG<span>.</span></div>
+      <h1>Everything AG.<br><span class="gradient-text">One Place.</span></h1>
+      <p class="hero-description">
+        Discover all official AG social accounts, communities,
+        applications and online services in one place.
+      </p>
+      <a class="primary-button" href="#links">Explore All Links <span>↓</span></a>
+      <div class="hero-tags">
+        <span>✦ Social Media</span>
+        <span>✦ Community</span>
+        <span>✦ Apps & Services</span>
+      </div>
+    </section>
+
+    <section class="links-section" id="links">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">CONNECT WITH AG</span>
+          <h2>All <span class="accent">Links</span></h2>
+        </div>
+        <span class="link-count" id="link-count">0 LINKS</span>
+      </div>
+
+      <div class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input id="search-input" type="search"
+          placeholder="Search links..." aria-label="Search links">
+        <kbd>/</kbd>
+      </div>
+
+      <nav class="filters" aria-label="Filter links">
+        <button class="filter active" data-filter="All">All</button>
+        <button class="filter" data-filter="Social">Social</button>
+        <button class="filter" data-filter="Community">Community</button>
+        <button class="filter" data-filter="Apps">Apps</button>
+        <button class="filter" data-filter="Other">Other</button>
+      </nav>
+
+      <div class="links-grid" id="links-grid">
+        <div class="empty-state">Loading links...</div>
+      </div>
+
+      <p class="no-results" id="no-results" hidden>
+        No links found. Try another search.
+      </p>
+    </section>
+
+    <section class="about">
+      <span class="eyebrow">ABOUT THIS HUB</span>
+      <h2>One brand. <span class="gradient-text">Many possibilities.</span></h2>
+      <p>Find AG's official online destinations through one simple link hub.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-icon">AG</span>
+      <span>AG <span class="accent">LINKS</span></span>
+    </a>
+    <p>© <span id="year"></span> AG LINKS. All rights reserved.</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
